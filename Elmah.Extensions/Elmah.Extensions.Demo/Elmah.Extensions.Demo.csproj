@@ -53,8 +53,8 @@
       <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Elmah.Io.ElasticSearch, Version=1.0.0.27, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Elmah.ElasticSearch.1.1.0.27\lib\net40\Elmah.Io.ElasticSearch.dll</HintPath>
+    <Reference Include="Elmah.Io.ElasticSearch, Version=1.0.0.31, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Elmah.ElasticSearch.1.2.0.31\lib\net40\Elmah.Io.ElasticSearch.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Elmah.Mvc, Version=2.1.2.1389, Culture=neutral, processorArchitecture=MSIL">
@@ -228,7 +228,9 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
