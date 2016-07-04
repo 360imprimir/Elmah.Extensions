@@ -48,10 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DictionaryExtensions.cs" />
+    <Compile Include="Exceptions\UnhandledException.cs" />
     <Compile Include="FallbackErrorLog.cs" />
     <Compile Include="FallbackErrorLogSectionHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnhandledExceptionModule.cs" />
+    <Compile Include="ErrorLogModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
