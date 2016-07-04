@@ -12,8 +12,9 @@ namespace Elmah.Extensions
         static object _initLock = new object();
         static bool _initialized = false;
 
-        public void Init(HttpApplication app)
+        protected override void OnInit(HttpApplication app)
         {
+            base.OnInit(app);
 
             // Do this one time for each AppDomain.
             if (!_initialized)
@@ -30,11 +31,7 @@ namespace Elmah.Extensions
             }
         }
 
-        public void Dispose()
-        {
-        }
-
-        void OnUnhandledException(object o, UnhandledExceptionEventArgs e)
+        protected void OnUnhandledException(object o, UnhandledExceptionEventArgs e)
         {
             // Let this occur one time for each AppDomain.
             if (Interlocked.Exchange(ref _unhandledExceptionCount, 1) != 0)
